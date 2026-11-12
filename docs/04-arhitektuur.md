@@ -94,3 +94,21 @@ Mikroteenuste arhitektuuris oleks iga ärivaldkond eraldi rakendus oma andmebaas
 | Kulu | üks väike server | mitu serverit, rohkem seadistust ja jälgimist |
 
 **Järeldus.** Laohaldust kasutab kuni 10 inimest ja arendab üks väike meeskond. Mikroteenused lisaksid palju keerukust (võrguühendused, mitu andmebaasi, hajutatud tehingud), aga nende peamisi eeliseid (sõltumatu skaleerimine ja mitu meeskonda) see projekt ei vaja. Seepärast on valitud kihiline monoliit. Kood jagatakse ka monoliidi sees pakettideks ärivaldkondade järgi (tooted, ladu, kasutajad, aruanded), nii et vajaduse korral saab mõne osa (näiteks aruandluse) hiljem eraldi teenuseks tõsta.
+
+## 4.7 Kasutajaliidese visandid
+
+Visandid näitavad veebiliidese põhivaateid enne, kui neid programmeeritakse. Klient saab nende järgi juba disainietapis öelda, kas vaade on arusaadav ja kas midagi on puudu. Visandid on tehtud PlantUML-i Salt-süntaksiga, nii et neid saab muuta nagu teisi skeeme.
+
+**Toodete nimekiri ja otsing** (US-03, US-07): otsing „pii“ leiab kõik tooted, mille nimes see on, ja alla miinimumi olev toode on esile tõstetud.
+
+![Toodete nimekiri](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/urmasrehkalt/laohaldus-kavand/main/diagrams/visand-tooted.puml)
+
+**Kauba väljastamine** (US-05): sama olukord, mis [andmevoo skeemil](#43-kuidas-andmed-komponentide-vahel-liiguvad), kui laos on vähem, kui sisestati. Server tagastab `409 Conflict` ja veebiliides näitab veateadet.
+
+![Kauba väljastamine](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/urmasrehkalt/laohaldus-kavand/main/diagrams/visand-valjastamine.puml)
+
+**Toote lisamine** (US-02): väljad vastavad [andmemudelile](#45-andmemudel). Kõlblikkusaeg on toidukaubal, garantii elektroonikal.
+
+![Toote lisamine](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/urmasrehkalt/laohaldus-kavand/main/diagrams/visand-toote-lisamine.puml)
+
+Lähtefailid: [visand-tooted.puml](../diagrams/visand-tooted.puml), [visand-valjastamine.puml](../diagrams/visand-valjastamine.puml), [visand-toote-lisamine.puml](../diagrams/visand-toote-lisamine.puml)

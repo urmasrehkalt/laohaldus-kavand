@@ -1,0 +1,24 @@
+@startsalt visand-tooted
+title Visand: toodete nimekiri ja otsing (US-03, US-07)
+
+{+
+  {* Laohaldus | Tooted | Vastuvõtt | Väljastus | Aruanded | Kasutajad }
+  {
+    <b>Tooted | . | . | . | Mari Mets (laotöötaja) | [Logi välja]
+  }
+  --
+  {
+    Otsi nime või koodi järgi: | "pii               " | [Otsi] | . | [+ Lisa toode]
+  }
+  .
+  {#
+    <b>Tootekood | <b>Nimi | <b>Kategooria | <b>Laos | <b>Miinimum | <b>Tegevus
+    TOI-001 | Piim 2,5% 1 l | Toidukaup | 24 tk | 10 tk | [Ava]
+    TOI-014 | Piimašokolaad 100 g | Toidukaup | <b>3 tk (alla miinimumi!) | 5 tk | [Ava]
+    TOI-022 | Kohupiim 9% 200 g | Toidukaup | 15 tk | 8 tk | [Ava]
+  }
+  .
+  Leitud 3 toodet. Alla miinimumi olevad tooted on rasvases kirjas.
+}
+
+@endsalt

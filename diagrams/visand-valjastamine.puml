@@ -1,0 +1,21 @@
+@startsalt visand-valjastamine
+title Visand: kauba väljastamine (US-05)
+
+{+
+  {* Laohaldus | Tooted | Vastuvõtt | Väljastus | Aruanded | Kasutajad }
+  --
+  <b>Kauba väljastamine
+  .
+  {
+    Toode: | ^Piim 2,5% 1 l (TOI-001)^
+    Laos praegu: | 24 tk
+    Väljastatav kogus: | "30        "
+    Kommentaar: | "Poesaali riiulile       "
+  }
+  .
+  { [Väljasta] | [Tühista] }
+  --
+  <b>Viga: Laos on ainult 24 tk. Laoseisu ei muudetud.
+}
+
+@endsalt

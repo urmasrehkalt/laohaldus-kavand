@@ -40,6 +40,7 @@ Kõik skeemid on tekstifailid, mida saab muuta. Pildid ei ole repositooriumis er
 | Andmevoog: kauba väljastamine | [diagrams/andmevoog.puml](diagrams/andmevoog.puml) | PlantUML |
 | Andmemudel (ER) | [diagrams/andmemudel.puml](diagrams/andmemudel.puml) | PlantUML |
 | Kasutusjuhud | [diagrams/kasutusjuhud.puml](diagrams/kasutusjuhud.puml) | PlantUML |
+| Kasutajaliidese visandid | [visand-tooted.puml](diagrams/visand-tooted.puml), [visand-valjastamine.puml](diagrams/visand-valjastamine.puml), [visand-toote-lisamine.puml](diagrams/visand-toote-lisamine.puml) | PlantUML (Salt) |
 
 Kuidas skeemi muuta:
 

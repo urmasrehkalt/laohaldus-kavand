@@ -6,7 +6,7 @@
 |---|---|---|
 | 1. Idee ja eeluuring | Mõista probleemi ja otsustada, kas rakendust tasub teha | Vestlus Nurgapoe omanikuga: Exceli tabel ei näita õiget laoseisu, kaup saab otsa, aegunud toit jääb märkamata. Eesmärk: laoseis on alati õige ja juhataja saab hoiatuse enne, kui kaup otsa saab. |
 | 2. Nõuete analüüs | Panna kirja, mida süsteem peab tegema ja millistel tingimustel | Kasutajalood ja nende vastuvõtukriteeriumid ([backlog](02-metoodika-ja-backlog.md)), [kasutusjuhtude skeem](../diagrams/kasutusjuhud.puml), mittefunktsionaalsed nõuded (vt allpool). |
-| 3. Disain | Otsustada, kuidas süsteem üles ehitatakse | [Arhitektuur](04-arhitektuur.md), [andmemudel](../diagrams/andmemudel.puml), [andmevoog](../diagrams/andmevoog.puml), kasutajaliidese visandid. |
+| 3. Disain | Otsustada, kuidas süsteem üles ehitatakse | [Arhitektuur](04-arhitektuur.md), [andmemudel](../diagrams/andmemudel.puml), [andmevoog](../diagrams/andmevoog.puml), [kasutajaliidese visandid](04-arhitektuur.md#47-kasutajaliidese-visandid). |
 | 4. Arendus | Kirjutada kood | Iga kasutajalugu tehakse eraldi Giti harus, kood vaadatakse üle pull request'is ja ühendatakse `main` harusse. |
 | 5. Testimine | Veenduda, et rakendus töötab ja vastab nõuetele | Ühiktestid (äriloogika, nt laoseis ei lähe alla nulli), integratsioonitestid (API + andmebaas), kliendi vastuvõtutest iga sprindi lõpus. |
 | 6. Kasutuselevõtt | Viia rakendus päris kasutusse | Paigaldus serverisse, toodete import Exceli tabelist, töötajate koolitus, versioon 1.0.0. |

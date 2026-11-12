@@ -1,0 +1,26 @@
+@startsalt visand-toote-lisamine
+title Visand: toote lisamine (US-02)
+
+{+
+  {* Laohaldus | Tooted | Vastuvõtt | Väljastus | Aruanded | Kasutajad }
+  --
+  <b>Uus toode
+  .
+  {
+    Tootekood: | "TOI-023          "
+    Nimi: | "Hapukoor 20% 200 g "
+    Kategooria: | ^Toidukaup^
+    Ühik: | ^tk^
+    Hind (€): | "1,35             "
+    Miinimumkogus: | "10               "
+    Tüüp: | { (X) Toidukaup | () Elektroonika | () Muu }
+    Kõlblikkusaeg: | "20.11.2026       "
+    Garantii (kuud): | ainult elektroonikal
+  }
+  .
+  { [Salvesta] | [Tühista] }
+  .
+  Tootekood peab olema unikaalne, hind ja miinimumkogus ei tohi olla negatiivsed.
+}
+
+@endsalt

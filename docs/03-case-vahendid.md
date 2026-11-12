@@ -10,7 +10,7 @@ CASE-vahend (*Computer-Aided Software Engineering*) on tarkvara, mis toetab tark
 | Vahend | Liik | Milleks seda projektis kasutasin | Toetatud arendustegevus |
 |---|---|---|---|
 | **diagrams.net** (draw.io) | modelleerimine, ülemine CASE | [arhitektuuriskeem](../diagrams/arhitektuur.drawio) | disain |
-| **PlantUML** | modelleerimine, ülemine CASE | [kasutusjuhud](../diagrams/kasutusjuhud.puml), [andmevoog (jadaskeem)](../diagrams/andmevoog.puml), [andmemudel (ER)](../diagrams/andmemudel.puml), [arhitektuur tekstina](../diagrams/arhitektuur.puml) | nõuete analüüs, disain |
+| **PlantUML** | modelleerimine, ülemine CASE | [kasutusjuhud](../diagrams/kasutusjuhud.puml), [andmevoog (jadaskeem)](../diagrams/andmevoog.puml), [andmemudel (ER)](../diagrams/andmemudel.puml), [arhitektuur tekstina](../diagrams/arhitektuur.puml), [kasutajaliidese visandid](04-arhitektuur.md#47-kasutajaliidese-visandid) | nõuete analüüs, disain |
 | **GitHub Projects** | projektihaldus | backlog, prioriteedid, sprindid, tahvel | planeerimine, jälgimine |
 | **Git ja GitHub** | versioonihaldus, alumine CASE | kõik dokumendid ja skeemid on versioonihalduses, iga muudatus on commit | konfiguratsioonihaldus, koostöö |
 
