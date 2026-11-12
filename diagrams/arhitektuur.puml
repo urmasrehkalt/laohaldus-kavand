@@ -1,0 +1,41 @@
+@startuml arhitektuur
+' Laohalduse arhitektuur: kihiline monoliit.
+' Sama skeem diagrams.net-is: arhitektuur.drawio
+
+title Laohaldus: arhitektuur (kihiline monoliit)
+
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam defaultFontName Arial
+
+actor "Laotöötaja" as worker
+actor "Juhataja" as manager
+
+node "Kasutaja seade (brauser arvutis või tahvlis)" as device {
+  component "Veebiliides\nReact SPA" as ui #FFF2CC
+}
+
+node "Rakendusserver: laohalduse rakendus (Spring Boot)" as server {
+  component "Turvakiht\nSpring Security: sisselogimine, rollid" as sec #F8CECC
+  component "Esitluskiht\nREST API kontrollerid (/api/v1)" as api #DAE8FC
+  component "Ajastatud tööd\nScheduler" as sched #E1D5E7
+  component "Teenuskiht (äriloogika)\nProductService, StockService,\nReportService, UserService" as svc #D5E8D4
+  component "Teavitused\nNotificationService" as notif #D5E8D4
+  component "Andmepääsukiht\nRepository (Spring Data JPA)" as repo #DAE8FC
+}
+
+database "PostgreSQL\nandmebaas" as db
+cloud "E-posti teenus\n(SMTP)" as mail
+
+worker --> ui
+manager --> ui
+ui --> sec : HTTPS, JSON (REST)
+sec --> api : kontrollitud päring
+api --> svc : DTO
+sched --> svc : öine kontroll
+svc --> notif : hoiatus
+svc --> repo : olemid (entity)
+repo --> db : SQL (JDBC)
+notif --> mail : SMTP
+
+@enduml

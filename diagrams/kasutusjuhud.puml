@@ -1,0 +1,45 @@
+@startuml kasutusjuhud
+' Laohalduse kasutusjuhtude skeem (nõuete analüüs)
+
+title Laohaldus: kasutusjuhud
+
+left to right direction
+skinparam shadowing false
+skinparam defaultFontName Arial
+
+actor "Laotöötaja" as worker
+actor "Juhataja" as manager
+actor "Administraator" as admin
+actor "Ajastaja\n(süsteem)" as scheduler
+
+worker <|-- manager
+manager <|-- admin
+
+rectangle "Laohaldusrakendus" {
+  usecase "Logi sisse" as UC1
+  usecase "Otsi toodet" as UC3
+  usecase "Võta kaup vastu" as UC4
+  usecase "Väljasta kaup" as UC5
+  usecase "Tee inventuur" as UC12
+  usecase "Lisa või muuda toodet" as UC2
+  usecase "Vaata laoliikumisi" as UC6
+  usecase "Vaata aruannet" as UC10
+  usecase "Ekspordi CSV" as UC11
+  usecase "Halda kasutajaid" as UC8
+  usecase "Saada laoseisu ja\nkõlblikkusaja hoiatus" as UC7
+}
+
+worker --> UC1
+worker --> UC3
+worker --> UC4
+worker --> UC5
+worker --> UC12
+manager --> UC2
+manager --> UC6
+manager --> UC10
+admin --> UC8
+scheduler --> UC7
+UC10 <.. UC11 : <<extend>>
+UC5 <.. UC7 : <<extend>>\nkui kogus langeb\nalla miinimumi
+
+@enduml

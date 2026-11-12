@@ -1,0 +1,46 @@
+@startuml andmevoog
+' Andmevoog kasutajaliidesest andmebaasini: kauba väljastamine (US-05)
+
+title Andmevoog: kauba väljastamine laost
+
+skinparam shadowing false
+skinparam defaultFontName Arial
+
+actor "Laotöötaja" as user
+participant "Veebiliides\n(React)" as ui
+participant "Turvakiht\n(Spring Security)" as sec
+participant "StockController" as ctrl
+participant "StockService" as svc
+participant "ProductRepository\nStockMovementRepository" as repo
+database "PostgreSQL" as db
+participant "NotificationService" as notif
+
+user -> ui : valib toote, sisestab koguse,\nvajutab „Väljasta“
+ui -> ui : kontrollib vormi (kogus > 0)
+ui -> sec : POST /api/v1/stock/issue\n{"productId": 12, "quantity": 5}
+sec -> sec : kontrollib sessiooni ja rolli
+sec -> ctrl : päring
+ctrl -> svc : issue(productId, quantity, kasutaja)
+activate svc
+svc -> repo : leia toode lukustatult
+repo -> db : SELECT ... FOR UPDATE
+db --> repo : toote rida
+repo --> svc : Product
+alt laos on piisavalt
+  svc -> repo : salvesta uus kogus ja laoliikumine
+  repo -> db : UPDATE product\nINSERT stock_movement\nCOMMIT
+  db --> repo : OK
+  opt kogus langes alla miinimumi
+    svc ->> notif : saada hoiatus (asünkroonselt)
+  end
+  svc --> ctrl : StockResultDto
+  ctrl --> ui : 200 OK\n{"productId": 12, "quantity": 7}
+  ui --> user : „Väljastatud, laos alles 7 tk“
+else laos on vähem
+  svc --> ctrl : InsufficientStockException
+  ctrl --> ui : 409 Conflict + veateade
+  ui --> user : „Laos on ainult 3 tk“
+end
+deactivate svc
+
+@enduml

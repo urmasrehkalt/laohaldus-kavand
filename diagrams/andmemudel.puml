@@ -1,0 +1,57 @@
+@startuml andmemudel
+' Laohalduse andmemudel (ER-skeem)
+
+title Laohaldus: andmemudel
+
+hide circle
+skinparam linetype ortho
+skinparam shadowing false
+skinparam defaultFontName Arial
+
+entity "app_user\n(kasutaja)" as app_user {
+  * id : bigint <<PK>>
+  --
+  * email : varchar <<unique>>
+  * name : varchar
+  * password_hash : varchar
+  * role : WORKER | MANAGER | ADMIN
+  * active : boolean
+}
+
+entity "category\n(kategooria)" as category {
+  * id : bigint <<PK>>
+  --
+  * name : varchar <<unique>>
+}
+
+entity "product\n(toode)" as product {
+  * id : bigint <<PK>>
+  --
+  * sku : varchar <<unique>>
+  * name : varchar
+  * category_id : bigint <<FK>>
+  * unit : varchar
+  * price : numeric(10,2)
+  * quantity : integer
+  * min_quantity : integer
+  expiry_date : date
+  warranty_months : integer
+  * created_at : timestamp
+}
+
+entity "stock_movement\n(laoliikumine)" as stock_movement {
+  * id : bigint <<PK>>
+  --
+  * product_id : bigint <<FK>>
+  * user_id : bigint <<FK>>
+  * type : RECEIPT | ISSUE | ADJUSTMENT
+  * quantity : integer
+  comment : varchar
+  * created_at : timestamp
+}
+
+category ||--o{ product : sisaldab
+product ||--o{ stock_movement : liigub
+app_user ||--o{ stock_movement : registreerib
+
+@enduml
