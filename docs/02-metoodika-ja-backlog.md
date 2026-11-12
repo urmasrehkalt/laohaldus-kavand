@@ -64,23 +64,23 @@ Prioriteedid on määratud **MoSCoW** meetodiga:
 
 Hinnang on **lugemispunktides** (Fibonacci jada 1, 2, 3, 5, 8, 13), mis näitavad töö suhtelist mahtu ja keerukust, mitte tunde. Hinnangud antakse meeskonnaga *planning poker*'i abil. Eeldatav kiirus on 13 punkti sprindis. Esimese sprindi järel asendatakse eeldus tegeliku kiirusega.
 
-| ID | Kasutajalugu | Prioriteet | Punktid | Sprint |
-|---|---|---|---|---|
-| T-01 | Arenduskeskkond ja CI (tehniline töö) | Must | 3 | 1 |
-| US-01 | Sisselogimine | Must | 3 | 1 |
-| US-02 | Toote lisamine ja muutmine | Must | 5 | 1 |
-| US-03 | Toodete nimekiri ja otsing | Must | 2 | 1 |
-| US-04 | Kauba vastuvõtt | Must | 5 | 2 |
-| US-05 | Kauba väljastamine | Must | 5 | 2 |
-| US-06 | Laoliikumiste ajalugu | Should | 3 | 2 |
-| US-07 | Madala laoseisu hoiatus | Should | 5 | 3 |
-| US-08 | Kasutajate ja rollide haldus | Should | 5 | 3 |
-| US-09 | Kõlblikkusaja jälgimine | Should | 3 | 3 |
-| US-10 | Laoseisu aruanne ja lao koguväärtus | Could | 3 | 4 |
-| US-11 | Aruande eksport CSV-failina | Could | 2 | 4 |
-| US-12 | Inventuur | Could | 8 | 4 |
-| T-02 | Kasutuselevõtt: tootmisserver, varukoopiad, andmete import Excelist | Must | 5 | 5 |
-| US-13 | Tarnijate register | Won't (v1.1.0) | 5 | hiljem |
+| ID | Issue | Kasutajalugu | Prioriteet | Punktid | Sprint |
+|---|---|---|---|---|---|
+| T-01 | [#14](https://github.com/urmasrehkalt/laohaldus-kavand/issues/14) | Arenduskeskkond ja CI (tehniline töö) | Must | 3 | 1 |
+| US-01 | [#1](https://github.com/urmasrehkalt/laohaldus-kavand/issues/1) | Sisselogimine | Must | 3 | 1 |
+| US-02 | [#2](https://github.com/urmasrehkalt/laohaldus-kavand/issues/2) | Toote lisamine ja muutmine | Must | 5 | 1 |
+| US-03 | [#3](https://github.com/urmasrehkalt/laohaldus-kavand/issues/3) | Toodete nimekiri ja otsing | Must | 2 | 1 |
+| US-04 | [#4](https://github.com/urmasrehkalt/laohaldus-kavand/issues/4) | Kauba vastuvõtt | Must | 5 | 2 |
+| US-05 | [#5](https://github.com/urmasrehkalt/laohaldus-kavand/issues/5) | Kauba väljastamine | Must | 5 | 2 |
+| US-06 | [#6](https://github.com/urmasrehkalt/laohaldus-kavand/issues/6) | Laoliikumiste ajalugu | Should | 3 | 2 |
+| US-07 | [#7](https://github.com/urmasrehkalt/laohaldus-kavand/issues/7) | Madala laoseisu hoiatus | Should | 5 | 3 |
+| US-08 | [#8](https://github.com/urmasrehkalt/laohaldus-kavand/issues/8) | Kasutajate ja rollide haldus | Should | 5 | 3 |
+| US-09 | [#9](https://github.com/urmasrehkalt/laohaldus-kavand/issues/9) | Kõlblikkusaja jälgimine | Should | 3 | 3 |
+| US-10 | [#10](https://github.com/urmasrehkalt/laohaldus-kavand/issues/10) | Laoseisu aruanne ja lao koguväärtus | Could | 3 | 4 |
+| US-11 | [#11](https://github.com/urmasrehkalt/laohaldus-kavand/issues/11) | Aruande eksport CSV-failina | Could | 2 | 4 |
+| US-12 | [#12](https://github.com/urmasrehkalt/laohaldus-kavand/issues/12) | Inventuur | Could | 8 | 4 |
+| T-02 | [#15](https://github.com/urmasrehkalt/laohaldus-kavand/issues/15) | Kasutuselevõtt: tootmisserver, varukoopiad, andmete import Excelist | Must | 5 | 5 |
+| US-13 | [#13](https://github.com/urmasrehkalt/laohaldus-kavand/issues/13) | Tarnijate register | Won't (v1.1.0) | 5 | hiljem |
 
 Viies sprint on ette nähtud kasutuselevõtuks, kliendi vastuvõtutestiks ja leitud vigade parandamiseks. Kokku kulub versioonini 1.0.0 viis sprinti ehk 10 nädalat.
 
@@ -152,12 +152,12 @@ Viies sprint on ette nähtud kasutuselevõtuks, kliendi vastuvõtutestiks ja lei
 
 **Sprindi backlog (13 punkti):** T-01, US-01, US-02, US-03.
 
-| Lugu | Ülesanded |
-|---|---|
-| T-01 | Spring Boot ja React projekti põhi; PostgreSQL `docker-compose` failis; esimene Flyway migratsioon; GitHub Actionsi töövoog (ehitamine ja testid) |
-| US-01 | tabel `app_user` ja algne administraator; Spring Security sessioonipõhine sisselogimine; sisselogimise vorm; väljalogimine; testid |
-| US-02 | tabelid `product` ja `category`; `POST` ja `PUT /api/v1/products`; kontrollid teenuskihis (unikaalne kood, hind ≥ 0); toote vorm; testid |
-| US-03 | `GET /api/v1/products?q=`; toodete nimekirja vaade; otsingu testid |
+| Lugu | Issue | Ülesanded |
+|---|---|---|
+| T-01 | [#14](https://github.com/urmasrehkalt/laohaldus-kavand/issues/14) | Spring Boot ja React projekti põhi; PostgreSQL `docker-compose` failis; esimene Flyway migratsioon; GitHub Actionsi töövoog (ehitamine ja testid) |
+| US-01 | [#1](https://github.com/urmasrehkalt/laohaldus-kavand/issues/1) | tabel `app_user` ja algne administraator; Spring Security sessioonipõhine sisselogimine; sisselogimise vorm; väljalogimine; testid |
+| US-02 | [#2](https://github.com/urmasrehkalt/laohaldus-kavand/issues/2) | tabelid `product` ja `category`; `POST` ja `PUT /api/v1/products`; kontrollid teenuskihis (unikaalne kood, hind ≥ 0); toote vorm; testid |
+| US-03 | [#3](https://github.com/urmasrehkalt/laohaldus-kavand/issues/3) | `GET /api/v1/products?q=`; toodete nimekirja vaade; otsingu testid |
 
 **Ajakava (10 tööpäeva):**
 
