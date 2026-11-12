@@ -33,13 +33,13 @@
           <mxGeometry x="40" y="120" width="560" height="50" as="geometry" />
         </mxCell>
         <mxCell id="sched" value="&lt;b&gt;Ajastatud tööd&lt;/b&gt;&lt;br&gt;Scheduler" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="server">
-          <mxGeometry x="40" y="200" width="120" height="60" as="geometry" />
+          <mxGeometry x="20" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="svc" value="&lt;b&gt;Teenuskiht (äriloogika)&lt;/b&gt;&lt;br&gt;ProductService, StockService,&lt;br&gt;ReportService, UserService" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="server">
-          <mxGeometry x="180" y="200" width="240" height="60" as="geometry" />
+          <mxGeometry x="200" y="200" width="240" height="60" as="geometry" />
         </mxCell>
         <mxCell id="notif" value="&lt;b&gt;Teavitused&lt;/b&gt;&lt;br&gt;NotificationService" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="server">
-          <mxGeometry x="440" y="200" width="160" height="60" as="geometry" />
+          <mxGeometry x="500" y="200" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="repo" value="&lt;b&gt;Andmepääsukiht&lt;/b&gt;&lt;br&gt;Repository (Spring Data JPA)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="server">
           <mxGeometry x="40" y="300" width="560" height="50" as="geometry" />

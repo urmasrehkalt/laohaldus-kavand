@@ -53,7 +53,7 @@ Põhjused:
 Koskmudel sobiks siis, kui nõuded oleksid lepingus täpselt kirjas ja ei tohiks muutuda, näiteks kui rakendus tellitaks riigihankega kindla hinnaga.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Idee ja<br/>eeluuring] --> B[Esialgsed nõuded<br/>ja backlog]
     B --> C1
     subgraph S [Iteratsioon ehk sprint, 2 nädalat]

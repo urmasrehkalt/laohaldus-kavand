@@ -188,5 +188,5 @@ Kuidas töö liigub:
 1. **Planeerimine.** Sprindi planeerimisel valib meeskond backlogi tipust nii palju lugusid, kui kiirus lubab, ja märgib neile välja *Sprint*. Lood jagatakse ülesanneteks (issue sees märkeruutudena).
 2. **Arendus.** Arendaja võtab loo, liigutab selle veergu *In Progress* ja loob haru `feature/<issue-number>-nimi`. Korraga on ühel arendajal töös üks lugu.
 3. **Ülevaatus ja valmis.** Pull request viitab issue'le (`Closes #5`). Kui kood on üle vaadatud ja testid läbivad, ühendatakse haru ning issue sulgub ja liigub veergu *Done*.
-4. **Jälgimine.** Igapäevasel koosolekul vaadatakse tahvlit: mis on töös, mis seisab. Sprindi edenemist näitab burndown-graafik (GitHub Projects *Insights*), sprindi lõpus loetakse kokku valmis punktid ja see on meeskonna tegelik kiirus.
+4. **Jälgimine.** Igapäevasel koosolekul vaadatakse tahvlit: mis on töös, mis seisab. Sprindi edenemist näitab GitHub Projectsi *Insights* graafik (burn-up: valmis punktid kogumahu suhtes), sprindi lõpus loetakse kokku valmis punktid ja see on meeskonna tegelik kiirus.
 5. **Muudatused.** Uus soov lisatakse uue issue'na veergu *Todo* ilma sprindita. Tootejuht annab sellele prioriteedi ja järgmisel planeerimisel otsustatakse, millal see tehakse.

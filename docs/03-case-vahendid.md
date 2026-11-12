@@ -38,7 +38,7 @@ Arenduse ajal lisanduksid alumised CASE-vahendid: IntelliJ IDEA ja VS Code (kood
 | Koodi genereerimine | ei | ei | jah (nt Java klassid, andmebaasi skeem) |
 | Sobib | arhitektuuri- ja infrastruktuuriskeemid, kiire visand, esitlus | UML-skeemid, mis elavad koodi kõrval ja muutuvad tihti | suured projektid, kus mudel on peamine dokument |
 
-**Mida võrdlusest järeldan.** Tegin arhitektuuriskeemi mõlemas vahendis, et neid päriselt võrrelda. Diagrams.net-is sai skeemi paigutuse täpselt selliseks, nagu tahtsin, ja see sobib kliendile näitamiseks. PlantUML-is on skeem 40 rida teksti: uue komponendi lisamiseks piisab kahest reast ja Gitist on näha, mis täpselt muutus, kuid paigutust valib vahend ise. Seepärast kasutan PlantUML-i skeemide jaoks, mis muutuvad koos koodiga (jadaskeem, andmemudel), ja diagrams.net-i ülevaatlike skeemide jaoks. Visual Paradigmi eelised (mudeli kooskõla ja koodi genereerimine) tulevad välja suurtes projektides; selle projekti jaoks on see liiga kallis ja keeruline.
+**Mida võrdlusest järeldan.** Tegin arhitektuuriskeemi mõlemas vahendis, et neid päriselt võrrelda. Diagrams.net-is sai skeemi paigutuse täpselt selliseks, nagu tahtsin, ja see sobib kliendile näitamiseks. PlantUML-is on sama skeem umbes 40 rida teksti: uue komponendi lisamiseks piisab kahest reast ja Gitist on näha, mis täpselt muutus, kuid paigutust valib vahend ise. Seepärast kasutan PlantUML-i skeemide jaoks, mis muutuvad koos koodiga (jadaskeem, andmemudel), ja diagrams.net-i ülevaatlike skeemide jaoks. Visual Paradigmi eelised (mudeli kooskõla ja koodi genereerimine) tulevad välja suurtes projektides; selle projekti jaoks on see liiga kallis ja keeruline.
 
 ## 3.3 Projektihaldusvahendite võrdlus
 
