@@ -174,7 +174,7 @@ Igal hommikul on 15-minutiline koosolek tahvli ees.
 
 ## 2.4 Tööde planeerimine ja jälgimine
 
-Tööd on GitHubis: iga kasutajalugu on **issue** ja kõik issue'd on **GitHub Projects** tahvlil (link on [README-s](../README.md)).
+Tööd on GitHubis: iga kasutajalugu on **issue** ja kõik issue'd on **GitHub Projects** tahvlil ([„Laohaldus: backlog“](https://github.com/users/urmasrehkalt/projects/1)).
 
 Tahvli väljad:
 

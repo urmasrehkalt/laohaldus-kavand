@@ -27,7 +27,7 @@ Kasutajad: laotöötaja, juhataja ja administraator. Rakendust kasutatakse konto
 | Tarkvaraarhitektuur, andmevoog, alternatiivi võrdlus | [docs/04-arhitektuur.md](docs/04-arhitektuur.md) |
 | Versiooniplaan (SemVer) ja väljalasete tegemine | [docs/05-versiooniplaan.md](docs/05-versiooniplaan.md) |
 
-Tööde haldamine: GitHub Projects tahvel (link lisatakse siia pärast tahvli loomist), kasutajalood on repositooriumi [issue'des](../../issues).
+Tööde haldamine: [GitHub Projects tahvel „Laohaldus: backlog“](https://github.com/users/urmasrehkalt/projects/1). Kasutajalood on repositooriumi [issue'des](https://github.com/urmasrehkalt/laohaldus-kavand/issues): US-01 kuni US-13 on issue'd #1 kuni #13, tehnilised tööd T-01 ja T-02 on #14 ja #15.
 
 ## Skeemid ja nende muudetavad lähtefailid
 
